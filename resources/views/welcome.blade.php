@@ -12,22 +12,10 @@
 </head>
 <body>
 <div id="app">
-    <div class="container">
-        <br/>
-        <div class="row justify-content-center">
-
-            <div class="col-lg-6">
-                <form method="post" action="{{route('upload.image')}}" enctype="multipart/form-data">
-                    @csrf
-                    <label>Upload Image</label>
-                    <input type="file" class="form-control" name="image">
-                    <br/>
-                    <button class="btn btn-success">Upload</button>
-                </form>
-            </div>
-        </div>
-    </div>
+   <Uploadform></Uploadform>
 </div>
+
+<script src="{{asset('js/app.js')}}"></script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('image/upload','UploadimageContrller@upload')->name('upload.image');
+Route::post('/upload','UploadimageContrller@upload')->name('upload.image');
+Route::get('/get/image','UploadimageContrller@getImage')->name('get.image');
