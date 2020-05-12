@@ -22,5 +22,9 @@
         "sass-loader": "^8.0.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "vue-advanced-cropper": "^0.16.4",
+        "vue-toasted": "^1.1.28"
     }
 }

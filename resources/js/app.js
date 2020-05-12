@@ -7,6 +7,9 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import Toasted from 'vue-toasted';
+
+Vue.use(Toasted);
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +23,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 import UploadForm from "./components/UploadForm";
+import ImageCroper from "./components/ImageCroper";
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,7 +34,8 @@ import UploadForm from "./components/UploadForm";
 const app = new Vue({
     el: '#app',
     components:{
-        Uploadform:UploadForm
+        Uploadform:UploadForm,
+        my:ImageCroper
     }
 
 });
